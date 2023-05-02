@@ -1,0 +1,6 @@
+<div class="todo-item-container" [ngClass]="{'todo-item-completed': todo.checked}">
+  <input class="todo-item-checkbox" type="checkbox" (change)="onCheckboxChange()" [checked]="todo.checked"/>
+  <div class="todo-item-text">
+    {{todo.text}}
+  </div>
+</div>

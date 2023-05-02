@@ -1,0 +1,11 @@
+<app-layout>
+  <div class="create-todo-container">
+    <label for="todo-input">Todo:</label>
+    <input type="text" id="todo-input" placeholder="New todo ..." [(ngModel)]="inputValue" >
+    <button (click)="createTodo()">Create</button>
+  </div>
+
+  <div class="todos-container">
+    <app-todo-item *ngFor="let todo of todos" [todo]="todo" (checkmarkChange)="checkTodo($event)"></app-todo-item>
+  </div>
+</app-layout>
