@@ -87,17 +87,6 @@
             {/if}
         </div>
     </div>
-
-<!--    <div>-->
-<!--        <label>Description</label>-->
-<!--        <input type="text" bind:value={formData.description}/>-->
-<!--    </div>-->
-
-<!--    <div>-->
-<!--        <label>Rating</label>-->
-<!--        <input type="number" max="10" min="1" bind:value={formData.rating}/>-->
-<!--    </div>-->
-
     <button type="submit">Add</button>
 </form>
 

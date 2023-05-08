@@ -4,12 +4,12 @@
     import {movieStore} from "../stores/movies";
 
     // Example with manual subscribe
-    // export let movies: MovieSummary[] = [];
-    // const unsubscribe = movieStore.subscribe(v => {
-    //     movies = v;
-    // })
-    //
-    // onDestroy(unsubscribe);
+    /* export let movies: MovieSummary[] = [];
+    const unsubscribe = movieStore.subscribe(v => {
+        movies = v;
+    })
+
+    onDestroy(unsubscribe);*/
 </script>
 
 <h1>Popular movies</h1>

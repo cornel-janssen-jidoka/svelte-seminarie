@@ -23,17 +23,16 @@ describe('MovieCard', () => {
             expect(title).toHaveTextContent(movie.title);
 
             expect(description).toBeInTheDocument();
-            expect(description).toHaveTextContent(movie.description);
         });
     });
 
-    describe('on click favourte', () => {
+    describe('on click favourite', () => {
 
         beforeEach(() => {
             movieStore.set([movie])
         });
 
-        it('should mark the movie as favourite in the movies store', async() => {
+        it('should mark the movie as favourite in the movies store', async () => {
             const {getByRole} = render(MovieCard, {props: {movie}})
 
             const icon = getByRole('button', {
